@@ -1,8 +1,8 @@
-export default function Cell({isVisible}) {
+export default function Cell({isVisible, increaseScore}) {
     return (
         <>
             {isVisible &&
-                <button type="button">Press me!</button>
+                <button type="button" onClick={increaseScore}>Press me!</button>
             }
         </>
     )
